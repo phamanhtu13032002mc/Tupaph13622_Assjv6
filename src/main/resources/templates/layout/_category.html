@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title>Insert title here</title>
+</head>
+
+<body>
+<div class="panel panel-primary" th:fragment="category">
+  <div class="panel-body  progress-bar-danger" style=" color: white; font: 1.3em monospace;">
+    <b class="glyphicon glyphicon-briefcase"></b> CATEGORY
+  </div>
+  <div class="list-group">
+    <a th:each="c: ${cates}" th:href="@{|/home/list?cid=${c.id}|}" style="color: red;font: 1.1em Arial
+			Helvetica;"
+       class="list-group-item text-left">[[${c.name}]]</a>
+  </div>
+</div>
+</body>
+</html>

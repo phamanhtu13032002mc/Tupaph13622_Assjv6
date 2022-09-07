@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Insert title here</title>
+</head>
+
+<body>
+<div class="panel panel-default">
+    <div class="panel-heading">CATEGORY LIST</div>
+    <table class="table table-condensed">
+        <thead class="bg-success" style="font-variant: small-caps;">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in items">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>
+                <div class="btn-group btn-group-xs">
+                    <button ng-click="edit(item)" class="btn btn-warning glyphicon glyphicon-edit"></button>
+                    <button ng-click="delete(item)" class="btn btn-danger glyphicon glyphicon-trash"></button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="panel-footer text-center">
+        <button class="btn btn-danger">
+            <b class="glyphicon glyphicon-hand-left"></b>
+        </button>
+        <button class="btn btn-success">1 of15</button>
+        <button class="btn btn-danger">
+            <b class="glyphicon glyphicon-hand-right"></b>
+        </button>
+        <button class="btn btn-danger">
+            <b class="glyphicon glyphicon-hand-down"></b>
+        </button>
+    </div>
+</div>
+</body>
+
+</html>
