@@ -14,5 +14,6 @@ public class InterceptorConfig implements WebMvcConfigurer {
         registry.addInterceptor(globalInterceptor)
                 .addPathPatterns("/**").
                 addPathPatterns("/rest/**", "/admin/**", "/assets/**");
+        //con cac
     }
 }
