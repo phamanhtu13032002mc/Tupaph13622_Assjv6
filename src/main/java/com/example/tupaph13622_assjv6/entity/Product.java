@@ -21,7 +21,7 @@ public class Product implements Serializable {
 	Date createdata = new Date();
 	Boolean available;;
 	@ManyToOne
-	@JoinColumn(name = "categoryid")
+	@JoinColumn(name = "category_id")
 	Category Categorys;
 //	@OneToMany(mappedBy = "Products")
 //	List<OrderDetail> Orderdetails;

@@ -15,15 +15,15 @@ import java.util.List;
 @Entity
 @Table(name = "accounts")
 public class Account implements Serializable {
-	@Id
-	private String username;
-	private String password;
-	private String photo;
-	@JsonIgnore
-	@OneToMany(mappedBy = "account")
-	List<Order> orders;
+    @Id
+    private String username;
+    private String password;
+    private String photo;
+    @JsonIgnore
+    @OneToMany(mappedBy = "account")
+    List<Order> orders;
 
-	@JsonIgnore
-	@OneToMany(mappedBy = "account", fetch = FetchType.EAGER)
-	List<Authority> authorities;
+    @JsonIgnore
+    @OneToMany(mappedBy = "account", fetch = FetchType.EAGER)
+    List<Authority> authorities;
 }

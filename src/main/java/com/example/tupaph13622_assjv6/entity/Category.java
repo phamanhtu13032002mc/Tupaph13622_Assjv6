@@ -14,7 +14,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "categorys")
-public class Category implements Serializable {
+public class  Category implements Serializable {
 	@Id
 	String id;
 	String name;
